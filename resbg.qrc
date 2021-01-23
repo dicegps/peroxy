@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>img/bg3.png</file>
+        <file>img/playbtnscaled.png</file>
+        <file>img/loadingicon.gif</file>
+        <file>img/atomicon1.png</file>
+        <file>img/atomicon2.png</file>
+    </qresource>
+</RCC>

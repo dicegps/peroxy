@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>712</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>712</width>
+    <height>697</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>712</width>
+    <height>697</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Peroxy 1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/playbtnscaled.png</normaloff>img/playbtnscaled.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 10pt &quot;Sans Serif&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>465</y>
+      <width>716</width>
+      <height>166</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit2">
+    <property name="geometry">
+     <rect>
+      <x>375</x>
+      <y>20</y>
+      <width>326</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-15</y>
+      <width>931</width>
+      <height>316</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resbg.qrc">:/resources/img/bg3.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelAtom1">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>35</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Atom 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>55</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Atom 2</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="atom1Edit">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>30</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H</string>
+    </property>
+    <property name="maxLength">
+     <number>2</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="atom2Edit">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>55</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H</string>
+    </property>
+    <property name="maxLength">
+     <number>2</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>85</y>
+      <width>311</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QCheckBox" name="checkBoxSP">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxOptFreq">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>0</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Single Point Energy (SP)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>241</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Optimization/Frequency (Opt Freq)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Individiaul Atom SPE</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxIndividual">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>291</width>
+       <height>96</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>0</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Potential Energy Scan (PES)</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxPES">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>16</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="spinBoxInitial">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>16</y>
+        <width>62</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="decimals">
+       <number>1</number>
+      </property>
+      <property name="minimum">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>5.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.500000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Initial Value:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>176</x>
+        <y>20</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Å</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="spinBoxSize">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>41</y>
+        <width>62</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="decimals">
+       <number>1</number>
+      </property>
+      <property name="minimum">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.100000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>176</x>
+        <y>45</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Å</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>45</y>
+        <width>66</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Step Size:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>176</x>
+        <y>70</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Å</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Steps:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxSteps">
+      <property name="geometry">
+       <rect>
+        <x>115</x>
+        <y>65</y>
+        <width>56</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="minimum">
+       <number>2</number>
+      </property>
+      <property name="maximum">
+       <number>25</number>
+      </property>
+      <property name="value">
+       <number>17</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonReset">
+      <property name="geometry">
+       <rect>
+        <x>205</x>
+        <y>20</y>
+        <width>46</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QSlider" name="radialDistSlider">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>60</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>4</number>
+     </property>
+     <property name="value">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>66</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Distance:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="radialDistLabel">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>60</y>
+       <width>46</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+     </property>
+     <property name="text">
+      <string>0.5Å</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="dropDownMethod">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>40</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>B3LYP/6-31G*</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B3LYP/6-31G**</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>15</y>
+      <width>57</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Method:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonStart">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>300</y>
+      <width>366</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resbg.qrc">
+      <normaloff>:/resources/img/atomicon1.png</normaloff>:/resources/img/atomicon1.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>15</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 8pt &quot;Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Atomic</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="atom1Multiplicity">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>43</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>6</number>
+    </property>
+    <property name="value">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="atom2Multiplicity">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>55</y>
+      <width>43</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>6</number>
+    </property>
+    <property name="value">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>15</y>
+      <width>16</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditOptFreq">
+    <property name="geometry">
+     <rect>
+      <x>375</x>
+      <y>135</y>
+      <width>326</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>345</y>
+      <width>366</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Individual Atom SPE Results (hartrees)</string>
+    </property>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>30</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Single Point Energy for Atom 1:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>55</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Single Point Energy for Atom 2:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="textEditAtom1Energy">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>30</y>
+       <width>136</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="textEditAtom2Energy">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>55</y>
+       <width>136</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>5</y>
+      <width>236</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Single Point Energy Calculations:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>115</y>
+      <width>271</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Optimization &amp; Frequency Calculation:</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBarSP">
+    <property name="geometry">
+     <rect>
+      <x>375</x>
+      <y>80</y>
+      <width>326</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-background-color: rgb(255, 0, 127);</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBarOptFreq">
+    <property name="geometry">
+     <rect>
+      <x>375</x>
+      <y>200</y>
+      <width>326</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-color: rgb(255, 0, 127);</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBarScan">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>630</y>
+      <width>711</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-background-color: rgb(255, 0, 127);</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBarSingle">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>425</y>
+      <width>366</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-background-color: rgb(255, 0, 127);</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>0</y>
+      <width>96</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Multiplicity</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>15</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 8pt &quot;Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Molecular</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="molecularMultiplicityBox">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>43</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>6</number>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="whiteBgLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>235</y>
+      <width>711</width>
+      <height>376</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loadingLabel">
+    <property name="geometry">
+     <rect>
+      <x>365</x>
+      <y>290</y>
+      <width>336</width>
+      <height>166</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>450</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Potential Energy Scan</string>
+    </property>
+   </widget>
+   <zorder>whiteBgLabel</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>label</zorder>
+   <zorder>textEdit2</zorder>
+   <zorder>textEdit1</zorder>
+   <zorder>labelAtom1</zorder>
+   <zorder>label_2</zorder>
+   <zorder>atom1Edit</zorder>
+   <zorder>atom2Edit</zorder>
+   <zorder>dropDownMethod</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_14</zorder>
+   <zorder>atom1Multiplicity</zorder>
+   <zorder>atom2Multiplicity</zorder>
+   <zorder>line</zorder>
+   <zorder>textEditOptFreq</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_19</zorder>
+   <zorder>progressBarSP</zorder>
+   <zorder>progressBarOptFreq</zorder>
+   <zorder>progressBarScan</zorder>
+   <zorder>progressBarSingle</zorder>
+   <zorder>label_20</zorder>
+   <zorder>label_21</zorder>
+   <zorder>molecularMultiplicityBox</zorder>
+   <zorder>loadingLabel</zorder>
+   <zorder>buttonStart</zorder>
+   <zorder>frame</zorder>
+   <zorder>label_22</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>712</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resbg.qrc"/>
+ </resources>
+ <connections/>
+</ui>

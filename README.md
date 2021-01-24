@@ -8,7 +8,7 @@ Enter your atoms in Atom 1 & Atom 2, Peroxy will automatically calculate the mul
 Click Start
 Wait for all progress bars to turn green (100%)
 Copy your results
-All .com and .log output files generated will be saved in /home/username/3411L/PeroxyOutput/
+All .com and .log output files generated will be saved in /home/username/PeroxyOutput/
  
 *Important Notice:  This software is purely experimental and is by no means a replacement of the traditional Gaussian 09 setup.  This software does not contain any error-checking mechanisms, therefore there is provided without any guarantee as to the integrity of the data.  The developer is not liable for any errors in the data output, or any other software errors that may arise.  Use only for educational purposes, and at your own risk.  Always double check your work.
 
